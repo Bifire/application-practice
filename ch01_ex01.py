@@ -35,7 +35,7 @@ while keep_playing == 'y':
     user_choice = input("\n" + msg)
     idx = int(user_choice)
 
-    print("Reveraling the occupants...")
+    print("Revealing the occupants...")
     mas = ""
     for i in range(len(huts)):
         occupant_info = "<%d:%s>" % (i+1, huts[i])
@@ -47,9 +47,10 @@ while keep_playing == 'y':
     print("\033[1m" + "Entering hut %d... " % idx + "\033[0m", end=' ')
 
     if huts[idx-1] == 'enemy':
-        print("\033[1m" + "YOU LOSE :(Btter luck next time!" + "\033[0m")
+        print("\033[1m" + "YOU LOSE :Btter luck next time!" + "\033[0m")
     else:
         print("\033[1m" + "Congratulations! YOU WIN!!!" + "\033[0m")
     print(dotted_line)
     keep_playing = input("Play again? Yes(y)/No(n):")
+
 
