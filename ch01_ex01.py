@@ -52,5 +52,3 @@ while keep_playing == 'y':
         print("\033[1m" + "Congratulations! YOU WIN!!!" + "\033[0m")
     print(dotted_line)
     keep_playing = input("Play again? Yes(y)/No(n):")
-
-
